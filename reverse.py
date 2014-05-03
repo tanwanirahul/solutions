@@ -17,7 +17,7 @@ def reverse(sentence):
         string_data = matchobj.group(0)
         return string_data[::-1]
 
-    return re.sub("([\w-])+", string_reverse, sentence)
+    return re.sub("([\w-]+)", string_reverse, sentence)
 
 if __name__ == "__main__":
     sentence = raw_input("Sentence to reverse: ")
